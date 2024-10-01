@@ -64,9 +64,9 @@ h1 {
 }
 
 #add-task-btn {
-    display: flex;
-    align-items: center;
-    padding: 12px 20px;
+    display: inline-block;
+    text-align: center;
+    padding: 12px 20px;  /* Adjust padding for a good size */
     margin-left: 12px;
     background-color: #5c9ded;
     color: #ffffff;
@@ -76,8 +76,8 @@ h1 {
     font-size: 16px;
     font-weight: 500;
     transition: background-color 0.3s, transform 0.2s;
+    width: 100%; /* Ensure the button takes up full width on mobile */
 }
-
 #add-task-btn i {
     margin-right: 8px;
 }
@@ -292,14 +292,17 @@ footer {
         font-size: 1.8em;
     }
 
-    #add-task-btn {
-        margin-left: 0;
-        margin-top: 10px;
-        width: 100%;
-    }
-
     .input-section {
         flex-direction: column;
+    }
+
+    #add-task-btn {
+        margin-left: 0;          /* Remove margin */
+        margin-top: 10px;        /* Add space above button */
+        width: 100%;             /* Full width for mobile */
+        font-size: 14px;         /* Adjust font size for smaller screens */
+        padding: 12px 15px;      /* Ensure the button has proper padding */
+        text-align: center;      /* Center the text inside the button */
     }
 
     .tabs {
