@@ -209,34 +209,32 @@ h1 {
     transform: scale(1.2);
 }
 
-
 /* Footer styling */
 footer {
     text-align: center;
     padding: 20px;
     margin-top: 30px;
-    background-color: transparent; /* Keeping background transparent to blend with existing design */
-    font-family: 'Roboto', sans-serif; /* Matches To-Do list font */
-    color: #555; /* A subtle grey for text */
+    background-color: transparent;
+    font-family: 'Roboto', sans-serif;
+    color: #555;
 }
 
 .credit {
-    font-size: 14px; /* Smaller, refined text */
-    font-weight: 300; /* Light font weight */
-    color: #666; /* Subtle grey tone */
+    font-size: 14px;
+    font-weight: 300;
+    color: #666;
 }
 
 .credit a {
     text-decoration: none;
-    color: #3498db; /* Subtle blue to match a clean design */
-    font-weight: 400; /* Normal font weight */
+    color: #3498db;
+    font-weight: 400;
     transition: color 0.3s ease;
 }
 
 .credit a:hover {
-    color: #2980b9; /* Slightly darker blue on hover */
+    color: #2980b9;
 }
-
 
 /* Scrollbar Styling */
 #task-list::-webkit-scrollbar {
@@ -276,4 +274,56 @@ footer {
 @keyframes fadeInUp {
     from { opacity: 0; transform: translateY(20px); }
     to { opacity: 1; transform: translateY(0); }
+}
+
+/* Mobile Styles */
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    .container {
+        padding: 30px 20px;
+        width: 100%;
+        max-width: none;
+    }
+
+    h1 {
+        font-size: 1.8em;
+    }
+
+    #add-task-btn {
+        margin-left: 0;
+        margin-top: 10px;
+        width: 100%;
+    }
+
+    .input-section {
+        flex-direction: column;
+    }
+
+    .tabs {
+        flex-direction: column;
+    }
+
+    .tab-button {
+        margin-bottom: 10px;
+        width: 100%;
+    }
+
+    .task-item {
+        font-size: 14px;
+    }
+
+    .task-timestamp {
+        font-size: 10px;
+    }
+
+    .task-details input[type="checkbox"] {
+        transform: scale(1.1);
+    }
+
+    footer {
+        padding: 10px;
+    }
 }
